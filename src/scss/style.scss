@@ -1,0 +1,72 @@
+@import 'base'; /* Don't mess with this, just don't... */
+
+/* Start yo'biznazz right here */
+
+/*
+
+Organize your site in pages and sections.
+If you have a page that has many sections prefix the section with the page name. Ex. home-hero.scss
+
+Include any components you may need in components/components. Create new ones as needed.
+
+*/
+
+@import 'pages/page';
+
+@import 'sections/section';
+
+header {
+	margin-top: 30px;
+	h1 {
+		text-transform: uppercase;
+		text-align: center;
+		margin: 0;
+		font-size: 60px;
+	}
+	h2 {
+		text-transform: lowercase;
+		text-align: center;
+		margin: 0;
+		fonts-ize: 40px;
+	}
+}
+
+.story {
+	margin: 35px 20%;
+}
+
+h1.new {
+	margin: 0 auto;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 75px;
+	font-weight: bold;
+}
+
+#startdate, #startcost, #currdate {
+	font-weight: bold;
+}
+
+#newcost, #startcost {
+	color: #990000;
+}
+
+footer {
+	margin-top: 30px;
+	p {
+		text-align: center;
+		font-style: italic;
+		text-transform: uppercase;
+	}
+}
+
+
+// MEDIA QUERIES
+ 
+// Pass in your PX width so all can see the breakpoint easier.
+// It will convert to EM.
+@include mq-max-width(900){
+	p{
+		@include font-size(12);
+	}
+}

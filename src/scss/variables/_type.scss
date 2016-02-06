@@ -1,0 +1,11 @@
+$base-font-size: 16;
+$lineheight: 1.5;
+$base-line-height: 24;
+$defaultlineheight: $base-font-size * 1.5;
+
+@font-face{ 
+	font-family: 'Oswald';
+	src: url('../fonts/Oswald/WebFont.ttf');
+}
+
+$font-family: 'Oswald', Helvetica, Arial, sans-serif !default;

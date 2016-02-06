@@ -1,0 +1,6 @@
+{ 
+	"dest" : "./app",
+	"assets" : "", 
+	"hostname" : "",
+	"env" : "dev"
+}
